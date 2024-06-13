@@ -13,7 +13,7 @@ def about():
 # index.py
 
 from datetime import datetime
-import logging
+#import logging
 from flask import Flask, request, render_template
 #from replit import db
 
