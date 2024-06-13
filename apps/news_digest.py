@@ -4,8 +4,8 @@ import requests
 import openai
 
 def setup_api_keys():
-    openai.api_key = os.environ['openai']
-    news_api_key = os.environ['newsapi']
+    openai.api_key = os.environ['OPENAI_KEY']
+    news_api_key = os.environ['NEWSAPI_KEY']
     return news_api_key
 
 def get_news_headlines(news_api_key):
