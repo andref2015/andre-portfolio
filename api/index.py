@@ -15,7 +15,7 @@ def about():
 from datetime import datetime
 import logging
 from flask import Flask, request, render_template
-from replit import db
+#from replit import db
 
 from apps import weather, bitmap, jokes, news_digest
 
@@ -37,13 +37,13 @@ def render_home_page():
   return page
 
 def save_or_fetch_news():
-  today = datetime.now().strftime('%Y-%m-%d')
-  if today in db:
-      return db[today]
-  else:
-    summary_with_sources = news_digest.main()
-    db[today] = summary_with_sources
-    return summary_with_sources
+    today = datetime.now().strftime('%Y-%m-%d')
+  #if today in db:
+  #    return db[today]
+  #else:
+  #  summary_with_sources = news_digest.main()
+    #  db[today] = summary_with_sources
+    return "testing the news for now, try again later..."
 
 # ROUTES
 @app.route("/")
