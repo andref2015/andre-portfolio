@@ -1,29 +1,12 @@
-"""from flask import Flask
-
-app = Flask(__name__)
-
-@app.route('/')
-def home():
-    return 'Hello, World!'
-
-@app.route('/about')
-def about():
-    return 'About'"""
-
 # index.py
 
 from datetime import datetime
-#import logging
 from flask import Flask, request, render_template
-#from replit import db
 
 from apps import weather, bitmap, jokes, news_digest
 
 app = Flask(__name__)
 
-# Suppress GET requests logging
-#log = logging.getLogger('werkzeug')
-#log.setLevel(logging.ERROR)
 
 def render_home_page():
     with open("templates/index.html", "r") as f:
