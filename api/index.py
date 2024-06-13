@@ -24,9 +24,9 @@ def save_or_fetch_news():
     #if today in db:
     #    return db[today]
     #else:
-    #  summary_with_sources = news_digest.main()
+    summary_with_sources = news_digest.main()
     #  db[today] = summary_with_sources
-    return "testing the news for now, try again later..."
+    return summary_with_sources
 
 # ROUTES
 @app.route("/")
