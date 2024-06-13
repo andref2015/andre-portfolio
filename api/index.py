@@ -3,10 +3,9 @@
 from datetime import datetime
 from flask import Flask, request, render_template
 
-from apps import weather, bitmap, jokes, news_digest
+import weather, bitmap, jokes, news_digest
 
 app = Flask(__name__)
-
 
 def render_home_page():
     with open("templates/index.html", "r") as f:
