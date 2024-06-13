@@ -3,7 +3,7 @@
 from datetime import datetime
 from flask import Flask, request, render_template
 
-import weather, bitmap, jokes, news_digest
+from apps import weather, bitmap, jokes, news_digest
 
 app = Flask(__name__)
 
