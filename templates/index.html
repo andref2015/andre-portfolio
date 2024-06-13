@@ -1,0 +1,62 @@
+<!-- This is index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/static/css/main.css" rel="stylesheet" type="text/css">
+  <title>Andre's Portfolio</title>
+</head>
+
+<body>
+  <section id="bitmapSection">
+    <pre id="bitmap">{my_bitmap}</pre>
+  </section>
+  <br><br>
+
+  <header>
+    <p>Hi! I'm André, a full-stack product guy based in Estonia.</p>
+    <p>Here are the projects that I recently built with Python, Flask, and HTML/CSS/JS (each one uses a different API):</p>
+  </header>
+    
+  <br>
+
+  <section id="weatherApp">
+    <h3>Weather app</h3>
+    <p>Shows today's weather forecast in your city. <a href="/weather">Try it here.</a></p>
+  </section>
+  
+  <br>
+
+  <section id="dadJoke">
+    <h3>Random dad joke</h3>
+    <i><p id = "joke">{joke}</p></i>
+    <p>(Joke fetched from <a href= "https://icanhazdadjoke.com/" target="_blank">icanhazdadjoke.com</a>)</p>
+    <button onclick="fetchJoke()">New joke</button>
+  </section>
+  
+  <br><br>
+
+  <section id="news">
+    <h3>Today's Tech News Digest by GPT-4o</h3>
+    <p id="newsDigest">Loading news and calling OpenAI...</p>
+  </section>
+    
+  <br><br>
+
+  <section id="openSource">
+    <h3>Open Source Code</h3>
+    <p>You can find  the code that I wrote for this website and all these projects on <a href="https://replit.com/@andref2015/MyPortfolio?v=1#main.py" target="_blank">my Replit</a>.</p>
+  </section>
+
+  <br><br><br>
+  
+  <footer>
+    <p>André Ferretti</p>
+    <p>© blah blah blah</p>
+  </footer>
+
+  <br>
+  
+  <script src ="/static/js/main.js"></script>
+</body>
+</html>
