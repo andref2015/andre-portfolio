@@ -1,7 +1,7 @@
 # news_digest.py
 import os
 import requests
-#import openai
+import openai
 
 def setup_api_keys():
     openai.api_key = os.environ['openai']
